@@ -11,8 +11,8 @@
       "description": "This Node creates a DataFrame by reading data from HDFS, HIVE etc. The dataset has been defined earlier in Fire by using the Dataset Feature. As a user, you just have to select the Dataset of your interest.",
       "type": "dataset",
       "nodeClass": "fire.nodes.dataset.NodeDatasetStructured",
-      "x": "264.078px",
-      "y": "202.388px",
+      "x": "50px",
+      "y": "325px",
       "fields": [
         {
           "name": "storageLevel",
@@ -60,8 +60,8 @@
       "description": "This node splits the incoming DataFrame into two output DataFrames by applying the conditional logic",
       "type": "transform",
       "nodeClass": "fire.nodes.etl.NodeSplitByExpression",
-      "x": "438.943px",
-      "y": "127.232px",
+      "x": "225px",
+      "y": "325px",
       "fields": [
         {
           "name": "storageLevel",
@@ -109,8 +109,8 @@
       "description": "Prints the specified number of records in the DataFrame. It is useful for seeing intermediate output",
       "type": "transform",
       "nodeClass": "fire.nodes.util.NodePrintFirstNRows",
-      "x": "677.596px",
-      "y": "46.8672px",
+      "x": "400px",
+      "y": "325px",
       "fields": [
         {
           "name": "storageLevel",
@@ -183,8 +183,8 @@
       "description": "Prints the specified number of records in the DataFrame. It is useful for seeing intermediate output",
       "type": "transform",
       "nodeClass": "fire.nodes.util.NodePrintFirstNRows",
-      "x": "681.016px",
-      "y": "178.307px",
+      "x": "400px",
+      "y": "450px",
       "fields": [
         {
           "name": "storageLevel",
@@ -257,8 +257,8 @@
       "description": "Splits the incoming DataFrame into multiple output DataFrames by applying the conditional logic",
       "type": "transform",
       "nodeClass": "fire.nodes.etl.NodeSplitByMultipleExpressions",
-      "x": "437.917px",
-      "y": "240.974px",
+      "x": "225px",
+      "y": "450px",
       "fields": [
         {
           "name": "storageLevel",
@@ -350,8 +350,8 @@
       "description": "Prints the specified number of records in the DataFrame. It is useful for seeing intermediate output",
       "type": "transform",
       "nodeClass": "fire.nodes.util.NodePrintFirstNRows",
-      "x": "298.688px",
-      "y": "385.768px",
+      "x": "400px",
+      "y": "200px",
       "fields": [
         {
           "name": "storageLevel",
@@ -424,8 +424,8 @@
       "description": "Prints the specified number of records in the DataFrame. It is useful for seeing intermediate output",
       "type": "transform",
       "nodeClass": "fire.nodes.util.NodePrintFirstNRows",
-      "x": "463.711px",
-      "y": "390.784px",
+      "x": "400px",
+      "y": "575px",
       "fields": [
         {
           "name": "storageLevel",
@@ -498,8 +498,8 @@
       "description": "Prints the specified number of records in the DataFrame. It is useful for seeing intermediate output",
       "type": "transform",
       "nodeClass": "fire.nodes.util.NodePrintFirstNRows",
-      "x": "608.198px",
-      "y": "391.281px",
+      "x": "400px",
+      "y": "75px",
       "fields": [
         {
           "name": "storageLevel",
@@ -572,8 +572,8 @@
       "description": "Allows capturing Notes on the Workflow",
       "type": "sticky",
       "nodeClass": "fire.nodes.doc.NodeStickyNote",
-      "x": "191.893px",
-      "y": "11.888px",
+      "x": "20.25px",
+      "y": "81.25px",
       "fields": [
         {
           "name": "storageLevel",
