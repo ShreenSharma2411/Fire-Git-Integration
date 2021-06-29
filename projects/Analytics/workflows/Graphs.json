@@ -192,6 +192,80 @@
         }
       ],
       "engine": "scala"
+    },
+    {
+      "id": "3",
+      "name": "Print N Rows",
+      "description": "Prints the specified number of records in the DataFrame. It is useful for seeing intermediate output",
+      "type": "transform",
+      "nodeClass": "fire.nodes.util.NodePrintFirstNRows",
+      "x": "513.111px",
+      "y": "96.1111px",
+      "fields": [
+        {
+          "name": "storageLevel",
+          "value": "DEFAULT",
+          "widget": "array",
+          "title": "Output Storage Level",
+          "description": "Storage Level of the Output Datasets of this Node",
+          "optionsArray": [
+            "DEFAULT",
+            "NONE",
+            "DISK_ONLY",
+            "DISK_ONLY_2",
+            "MEMORY_ONLY",
+            "MEMORY_ONLY_2",
+            "MEMORY_ONLY_SER",
+            "MEMORY_ONLY_SER_2",
+            "MEMORY_AND_DISK",
+            "MEMORY_AND_DISK_2",
+            "MEMORY_AND_DISK_SER",
+            "MEMORY_AND_DISK_SER_2",
+            "OFF_HEAP"
+          ],
+          "required": false,
+          "display": true,
+          "editable": true,
+          "disableRefresh": false
+        },
+        {
+          "name": "title",
+          "value": "Row Values",
+          "widget": "textfield",
+          "title": "Title",
+          "required": false,
+          "display": true,
+          "editable": true,
+          "disableRefresh": false
+        },
+        {
+          "name": "n",
+          "value": "10",
+          "widget": "textfield",
+          "title": "Num Rows to Print",
+          "description": "number of rows to be printed",
+          "required": false,
+          "display": true,
+          "editable": true,
+          "disableRefresh": false
+        },
+        {
+          "name": "displayDataType",
+          "value": "true",
+          "widget": "array",
+          "title": "Display Data Type",
+          "description": "If true display rows DataType",
+          "optionsArray": [
+            "true",
+            "false"
+          ],
+          "required": false,
+          "display": true,
+          "editable": true,
+          "disableRefresh": false
+        }
+      ],
+      "engine": "all"
     }
   ],
   "edges": [
@@ -199,18 +273,13 @@
       "source": "1",
       "target": "2",
       "id": 1
-    }
-  ],
-  "dataSetDetails": [
+    },
     {
-      "id": 1,
-      "uuid": "8e9387d5-6a14-4961-858e-15ec72787dfa",
-      "header": true,
-      "path": "data/churn_prediction/churn.all",
-      "delimiter": ",",
-      "datasetType": "CSV",
-      "datasetSchema": "{\"colNames\":[\"state\",\"account_length\",\"area_code\",\"phone_number\",\"intl_plan\",\"voice_mail_plan\",\"number_vmail_messages\",\"total_day_minutes\",\"total_day_calls\",\"total_day_charge\",\"total_eve_minutes\",\"total_eve_calls\",\"total_eve_charge\",\"total_night_minutes\",\"total_night_calls\",\"total_night_charge\",\"total_intl_minutes\",\"total_intl_calls\",\"total_intl_charge\",\"number_customer_service_calls\",\"churned\"],\"colTypes\":[\"STRING\",\"DOUBLE\",\"DOUBLE\",\"STRING\",\"STRING\",\"STRING\",\"DOUBLE\",\"DOUBLE\",\"DOUBLE\",\"DOUBLE\",\"DOUBLE\",\"DOUBLE\",\"DOUBLE\",\"DOUBLE\",\"DOUBLE\",\"DOUBLE\",\"DOUBLE\",\"DOUBLE\",\"DOUBLE\",\"DOUBLE\",\"STRING\"],\"colFormats\":[],\"colMLTypes\":[\"TEXT\",\"NUMERIC\",\"NUMERIC\",\"TEXT\",\"TEXT\",\"TEXT\",\"NUMERIC\",\"NUMERIC\",\"NUMERIC\",\"NUMERIC\",\"NUMERIC\",\"NUMERIC\",\"NUMERIC\",\"NUMERIC\",\"NUMERIC\",\"NUMERIC\",\"NUMERIC\",\"NUMERIC\",\"NUMERIC\",\"NUMERIC\",\"TEXT\"]}"
+      "source": "2",
+      "target": "3",
+      "id": 2
     }
   ],
+  "dataSetDetails": [],
   "engine": "scala"
 }
